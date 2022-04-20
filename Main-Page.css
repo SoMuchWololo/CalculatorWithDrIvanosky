@@ -1,0 +1,11 @@
+.container {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    border: 3px;
+}
