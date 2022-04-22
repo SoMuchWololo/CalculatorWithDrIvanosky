@@ -1,11 +1,22 @@
+.display {
+    width: 375px;
+    border: 5px;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    color: #fff;
+    text-align: right;
+    font-size: 80px;
+    padding-right: 25px;
+}
+
 .container {
-    width: 300px;
+    width: 400px;
     display: flex;
     justify-content: center;
 }
 
 .button {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     border: 3px;
 }
