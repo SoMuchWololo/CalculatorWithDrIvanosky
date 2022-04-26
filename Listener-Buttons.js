@@ -2,8 +2,9 @@
     ya estan testeados, faltaria armar la visualizacion en el display y armar
     las funciones correspondientes.
 */
-document.getElementById("about").addEventListener("click", function() {
+document.getElementById("about").addEventListener("click", function(button){
     console.log("this is a about!");
+    button =  "?";
 });
 document.getElementById("delete").addEventListener("click", function() {
     console.log("this is a delete!");
