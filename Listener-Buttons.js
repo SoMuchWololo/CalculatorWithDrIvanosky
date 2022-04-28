@@ -6,13 +6,15 @@
     el boton apretado, falta concatenarlo y armar 
     las funciones aritmeticas
 */
+/*  elimine 2 lineas de codigos que ejecutaban el signo ? en la calculadora,
+ese boton es para poner info de nosotros al terminar la calculadora (About/info)
+Tambien puede utilizarse para explicar usos de la calculadora.
+*/
 
 let buttonPress = ""
 
 document.getElementById("about").addEventListener("click", function(){
     console.log("this is a about!");
-    buttonPress =  "?";
-    buttonValue()
 });
 document.getElementById("delete").addEventListener("click", function() {
     console.log("this is a delete!");
