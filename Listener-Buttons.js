@@ -21,6 +21,7 @@ document.getElementById("delete").addEventListener("click", function() {
 });
 document.getElementById("clear").addEventListener("click", function() {
     console.log("this is a clear!");
+    buttonClear()
 
 });
 document.getElementById("division").addEventListener("click", function() {
@@ -91,7 +92,7 @@ document.getElementById("zero").addEventListener("click", function() {
 document.getElementById("comma").addEventListener("click", function() {
     console.log("this is a comma!");
     buttonPress =  ",";
-    buttonValue()
+    buttonComma()
 });
 document.getElementById("equal").addEventListener("click", function() {
     console.log("this is a equal!");
