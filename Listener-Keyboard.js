@@ -14,53 +14,43 @@ document.addEventListener('keydown', function(event) {
             break;
         case 48:
             alert('0');
-            buttonPress =  "0";
-    buttonValue()
+            buttonValue("0");
             break;
         case 49:
             alert('1');
-            buttonPress =  "1";
-    buttonValue()
+            buttonValue("1");
             break;
         case 50:
             alert('2');
-            buttonPress =  "2";
-    buttonValue()
+            buttonValue("2");
             break; 
         case 51:
             alert('3');
-            buttonPress =  "3";
-    buttonValue()
+            buttonValue("3");
             break; 
         case 52:
             alert('4');
-            buttonPress =  "4";
-    buttonValue()
+            buttonValue("4");
             break; 
         case 53:
             alert('5');
-            buttonPress =  "5";
-    buttonValue()
+            buttonValue("5");
             break; 
         case 54:
             alert('6');
-            buttonPress =  "6";
-    buttonValue()
+            buttonValue("6");
             break; 
         case 55:
             alert('7');
-            buttonPress =  "7";
-    buttonValue()
+            buttonValue("7");
             break; 
         case 56:
             alert('8');
-            buttonPress =  "8";
-    buttonValue()
+            buttonValue("8");
             break;
         case 57:
             alert('9');
-            buttonPress =  "9";
-    buttonValue()
+            buttonValue("9");
             break;
         case 61:
             alert('=');
@@ -70,8 +60,7 @@ document.addEventListener('keydown', function(event) {
             break; 
         case 188:
             alert(',');
-            buttonPress =  ",";
-    buttonValue()
+            buttonComma();
             break; 
         case 191:
             alert('/');     

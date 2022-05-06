@@ -11,7 +11,7 @@ ese boton es para poner info de nosotros al terminar la calculadora (About/info)
 Tambien puede utilizarse para explicar usos de la calculadora.
 */
 
-let buttonPress = ""
+
 
 document.getElementById("about").addEventListener("click", function(){
     console.log("this is a about!");
@@ -29,54 +29,45 @@ document.getElementById("division").addEventListener("click", function() {
 });
 document.getElementById("seven").addEventListener("click", function() {
     console.log("this is a seven!");
-    buttonPress =  "7";
-    buttonValue()
+    buttonValue("7")
 });
 document.getElementById("eight").addEventListener("click", function() {
     console.log("this is a eight!");
-    buttonPress =  "8";
-    buttonValue()
+    buttonValue("8")
 });
 document.getElementById("nine").addEventListener("click", function() {
     console.log("this is a nine!");
-    buttonPress =  "9";
-    buttonValue()
+    buttonValue("9")
 });
 document.getElementById("multiplication").addEventListener("click", function() {
     console.log("this is a multiplication!");
 });
 document.getElementById("four").addEventListener("click", function() {
     console.log("this is a four!");
-    buttonPress =  "4";
-    buttonValue()
+    buttonValue("4")
 });
 document.getElementById("five").addEventListener("click", function() {
     console.log("this is a five!");
-    buttonPress =  "5";
-    buttonValue()
+    buttonValue("5")
 });
 document.getElementById("six").addEventListener("click", function() {
     console.log("this is a six!");
-    buttonPress =  "6";
-    buttonValue()
+    buttonValue("6")
 });
 document.getElementById("substraction").addEventListener("click", function() {
     console.log("this is a substraction!");
 });
 document.getElementById("one").addEventListener("click", function() {
     console.log("this is a one!");
-    buttonPress =  "1";
-    buttonValue()
+    buttonValue("1")
 });
 document.getElementById("two").addEventListener("click", function() {
     console.log("this is a two!");
-    buttonPress =  "2";
-    buttonValue()
+    buttonValue("2")
 });
 document.getElementById("three").addEventListener("click", function() {
     console.log("this is a three!");
-    buttonPress =  "3";
-    buttonValue()
+    buttonValue("3")
 });
 document.getElementById("addition").addEventListener("click", function() {
     console.log("this is a addition!");
@@ -86,12 +77,10 @@ document.getElementById("change-sign").addEventListener("click", function() {
 });
 document.getElementById("zero").addEventListener("click", function() {
     console.log("this is a zero!");
-    buttonPress =  "0";
-    buttonValue()
+    buttonValue("0")
 });
 document.getElementById("comma").addEventListener("click", function() {
     console.log("this is a comma!");
-    buttonPress =  ",";
     buttonComma()
 });
 document.getElementById("equal").addEventListener("click", function() {

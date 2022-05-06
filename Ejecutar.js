@@ -18,13 +18,13 @@ display = document.getElementById("display");
 
 
 // funcion para poder escribir los numeros en display
-function buttonValue(){
+function buttonValue(number){
     if (xi){
-        display.innerHTML = buttonPress;
+        display.innerHTML = number;
         xi = false;
     }
     else {
-        display.innerHTML += buttonPress;
+        display.innerHTML += number;
     }
 }
 
@@ -49,5 +49,4 @@ function buttonComma(){
     else {
 
     }
-    console.log(comma)
 }
