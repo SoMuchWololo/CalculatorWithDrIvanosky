@@ -25,6 +25,7 @@ document.getElementById("clear").addEventListener("click", function() {
 });
 document.getElementById("division").addEventListener("click", function() {
     console.log("this is a division!");
+    operation("/")
 });
 document.getElementById("seven").addEventListener("click", function() {
     console.log("this is a seven!");
@@ -40,6 +41,7 @@ document.getElementById("nine").addEventListener("click", function() {
 });
 document.getElementById("multiplication").addEventListener("click", function() {
     console.log("this is a multiplication!");
+    operation("x")
 });
 document.getElementById("four").addEventListener("click", function() {
     console.log("this is a four!");
@@ -55,6 +57,7 @@ document.getElementById("six").addEventListener("click", function() {
 });
 document.getElementById("substraction").addEventListener("click", function() {
     console.log("this is a substraction!");
+    operation("-")
 });
 document.getElementById("one").addEventListener("click", function() {
     console.log("this is a one!");
@@ -70,6 +73,7 @@ document.getElementById("three").addEventListener("click", function() {
 });
 document.getElementById("addition").addEventListener("click", function() {
     console.log("this is a addition!");
+    operation("+")
 });
 document.getElementById("change-sign").addEventListener("click", function() {
     console.log("this is a change-sign!");

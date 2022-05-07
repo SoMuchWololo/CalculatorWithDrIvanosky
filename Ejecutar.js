@@ -13,8 +13,9 @@ Dicho string tampoco puede superar los 9 caracteres*/
 let xi = true;
 let comma = true;
 let numant;
+let operator;
 
-let operator = document.getElementById("operator");
+let operatorSimbol = document.getElementById("operatorSimbol");
 display = document.getElementById("display");
 
 
@@ -24,9 +25,18 @@ function buttonValue(number){
         display.innerHTML = number;
         xi = false;
     }
-    else {
+    else if (operatorSimbol.innerHTML!=""){
+        numant = parseInt(display.innerHTML);
+        xi = true;
+        comma = true;
+        operator = operatorSimbol.innerHTML;
+        operatorSimbol.innerHTML = "";
+        buttonValue(number)
+    }
+    else{
         display.innerHTML += number;
     }
+
 }
 
 //funcion para limpiar el display
@@ -34,15 +44,23 @@ function buttonClear(){
     display.innerHTML = "0";
     xi = true;
     comma = true;
-    operator.innerHTML = ""
+    operatorSimbol.innerHTML = ""
 }
 
 //funcion para colocar la coma una unica vez por numero
 function buttonComma(){
     if (comma && xi){
-        display.innerHTML +=",";
+        display.innerHTML = "0,";
         comma = false;
         xi = false;
+    }
+    else if (operatorSimbol.innerHTML!=""){
+        numant = parseInt(display.innerHTML);
+        xi = true;
+        comma = true;
+        operator = operatorSimbol.innerHTML;
+        operatorSimbol.innerHTML = "";
+        buttonComma();
     }
     else if(comma){
         display.innerHTML +=",";
@@ -51,5 +69,5 @@ function buttonComma(){
 }
 
 function operation(op){
-    operator.innerHTML = op;
-}
+    operatorSimbol.innerHTML = op;
+}S
