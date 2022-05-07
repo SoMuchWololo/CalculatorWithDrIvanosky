@@ -14,6 +14,7 @@ let xi = true;
 let comma = true;
 let numant;
 
+let operator = document.getElementById("operator");
 display = document.getElementById("display");
 
 
@@ -33,20 +34,22 @@ function buttonClear(){
     display.innerHTML = "0";
     xi = true;
     comma = true;
+    operator.innerHTML = ""
 }
 
 //funcion para colocar la coma una unica vez por numero
 function buttonComma(){
     if (comma && xi){
         display.innerHTML +=",";
-        comma = false ;
+        comma = false;
         xi = false;
     }
     else if(comma){
         display.innerHTML +=",";
         comma = false;
     }
-    else {
+}
 
-    }
+function operation(op){
+    operator.innerHTML = op;
 }

@@ -22,7 +22,6 @@ document.getElementById("delete").addEventListener("click", function() {
 document.getElementById("clear").addEventListener("click", function() {
     console.log("this is a clear!");
     buttonClear()
-
 });
 document.getElementById("division").addEventListener("click", function() {
     console.log("this is a division!");
