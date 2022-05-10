@@ -80,7 +80,7 @@ document.getElementById("change-sign").addEventListener("click", function() {
 });
 document.getElementById("zero").addEventListener("click", function() {
     console.log("this is a zero!");
-    buttonValue("0")
+    buttonZero()
 });
 document.getElementById("comma").addEventListener("click", function() {
     console.log("this is a comma!");

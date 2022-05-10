@@ -18,25 +18,42 @@ let operator;
 let operatorSimbol = document.getElementById("operatorSimbol");
 display = document.getElementById("display");
 
-
+function checkOperation() {
+    numant = parseInt(display.innerHTML);
+    xi = true;
+    comma = true;
+    operator = operatorSimbol.innerHTML;
+    operatorSimbol.innerHTML = "";
+}
 // funcion para poder escribir los numeros en display
 function buttonValue(number){
     if (xi){
         display.innerHTML = number;
         xi = false;
     }
-    else if (operatorSimbol.innerHTML!=""){
-        numant = parseInt(display.innerHTML);
-        xi = true;
-        comma = true;
-        operator = operatorSimbol.innerHTML;
-        operatorSimbol.innerHTML = "";
-        buttonValue(number)
+    else if (operatorSimbol.innerHTML != ""){
+        checkOperation();
+        buttonValue(number);
     }
     else{
         display.innerHTML += number;
     }
 
+}
+
+// Boton Cero
+function buttonZero(){
+    
+    if (operatorSimbol.innerHTML != ""){
+        checkOperation();
+        buttonZero();
+    }
+    else if(xi){
+        display.innerHTML ="0";
+    }
+    else {
+        display.innerHTML +="0";
+    }
 }
 
 //funcion para limpiar el display
@@ -54,12 +71,8 @@ function buttonComma(){
         comma = false;
         xi = false;
     }
-    else if (operatorSimbol.innerHTML!=""){
-        numant = parseInt(display.innerHTML);
-        xi = true;
-        comma = true;
-        operator = operatorSimbol.innerHTML;
-        operatorSimbol.innerHTML = "";
+    else if (operatorSimbol.innerHTML != ""){
+        checkOperation();
         buttonComma();
     }
     else if(comma){
@@ -70,4 +83,4 @@ function buttonComma(){
 
 function operation(op){
     operatorSimbol.innerHTML = op;
-}S
+}
