@@ -88,4 +88,5 @@ document.getElementById("comma").addEventListener("click", function() {
 });
 document.getElementById("equal").addEventListener("click", function() {
     console.log("this is a equal!");
+    buttonEqual();
 });

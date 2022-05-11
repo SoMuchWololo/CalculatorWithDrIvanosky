@@ -84,3 +84,26 @@ function buttonComma(){
 function operation(op){
     operatorSimbol.innerHTML = op;
 }
+
+function buttonEqual(){
+    switch(operator){
+        case "+" :
+            display.innerHTML = suma(numant , parseInt(display.innerHTML));
+            break;
+    }
+    switch(operator){
+        case "-" :
+            display.innerHTML = resta(numant , parseInt(display.innerHTML));
+            break;
+    }
+    switch(operator){
+        case "*" :
+            display.innerHTML = multiplicacion(numant , parseInt(display.innerHTML));
+            break;
+    }
+    switch(operator){
+        case "/" :
+            display.innerHTML = division(numant , parseInt(display.innerHTML));
+            break;
+    }
+}
